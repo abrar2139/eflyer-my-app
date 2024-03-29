@@ -245,7 +245,7 @@ text-align: center;
     padding-top: 60px;
 }
 
-.sidebar a {
+.sidebar li {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
@@ -255,7 +255,7 @@ text-align: center;
     
 }
 
-.sidebar a:hover {
+.sidebar li:hover {
     color: #f26522;
 }
 
