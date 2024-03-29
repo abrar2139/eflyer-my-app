@@ -1,0 +1,336 @@
+.header{
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+    width: 85%;
+    margin: auto;
+    background-color: #252525;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    margin-bottom: 20px;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    height: 100%;
+    margin: auto;
+align-items: center;
+font-size: 16px;
+color: rgb(250, 246, 246);
+cursor: pointer;
+}
+.header .navbar p:hover{
+   color: #f26522;
+   transition: 0.4s;
+   transition-timing-function: ease-in-out;
+}
+/* background: url("https://themewagon.github.io/eflyer/images/banner-bg.png"); */
+.frontpage {
+    width: 100%;
+    height: 650px;
+    background: url("../images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+.frontpage1 h1{
+    margin: 20px 0 ;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+}
+.frontpage1 {
+text-align: center;
+}
+.linewise{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+    align-items: center;   
+}
+.linewise-left-section{
+    display: flex;
+    align-items: center;  
+  width: 68%;
+}
+.openbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 54px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin-right: 6px;
+    width: 8%;
+}
+.manu-all-category{
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;   
+}
+#all-category{
+    background-color: #252525;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#all-category .down-first-arrow{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.manu-all-category .options{
+    border-radius: 5px;
+    display: none;
+    width: 0;
+    height: 110px;
+    bottom: -115px;
+    position: absolute;
+    background-color: white;
+    color:#252525;
+    cursor: pointer;
+     padding:10px 18px;
+     cursor:default ;
+}
+.manu-all-category .options p{
+    padding:7px;
+    color: #212529;
+    cursor: pointer;
+}
+.manu-all-category .options p:hover{
+    background-color:rgb(248, 245, 245);
+}
+.manu-all-category .options.category{
+    width: 200px;
+    display: block;
+   
+}
+.searching{
+    width:75%;
+    position: relative;
+    margin-left:10px;
+}
+.linewise input{
+     width: 92%;
+     height: 40px;
+     border-radius: 5px 0px 0px 5px;
+     border:transparent;
+     font-size: large;
+     padding-left: 10px;
+     border: none;
+}
+.linewise input:focus {
+    outline:none;
+}
+.search-icon-parent{
+    background-color: #f26522;
+    width: 8%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius:0px 5px 5px 0px;
+    cursor: pointer;
+}
+.serach-icon{
+    font-size: 25px;
+    color: white;
+}
+.linewise-right-section{
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.language-manu{
+    width: 45%;
+    position: relative;
+}
+.english{
+    width: 100%;
+    height: 40px;
+    
+    border-radius: 5px;
+    background-color: #ffffff;
+    border:none;
+    cursor: pointer; 
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.english .down-second-arrow{
+    font-size: 15px;
+}
+.language-manu .french{
+    border-radius: 5px;
+    height: 50px;
+    width: 0;
+    position: absolute;
+    bottom: -55px;
+    background-color: #ffffff;
+    color: #212529;
+    display: none;
+    
+}
+.language-manu .french p{
+    margin-left: 20px;
+}
+.language-manu .french.show{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linewise .icons{
+    display: flex;
+    cursor: pointer;
+    color: white;
+    width: 55%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons .icon1{
+    display: flex;
+    font-size: 16px;
+    margin-right: 10px;
+    align-items: center;
+}
+.icons .icon2{
+    display: flex;
+    align-items: center;
+    font-size: 16px;  
+}
+.icon{
+    margin-right:5px ;
+    font-size: 18px;
+
+}
+.icons .icon1:hover{
+ color: #f26522;
+ transition:color 0.3s ease-in-out;
+}
+.icons .icon2:hover{
+    color: #f26522;
+    transition:color 0.3s ease-in-out;
+   }
+   .sidebar {
+    height: 650px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #252525;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidebar a:hover {
+    color: #f26522;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 36px;
+    cursor: pointer;
+    color: white; 
+    border: none; 
+    background: none; 
+}
+
+.sidebar.open {
+    width: 250px;
+}
+.frontpage-slider {
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+}
+.frontpage-slider .frontpage-inner-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+.frontpage-slider h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px 0;
+    
+}
+.frontpage-slider button{
+    margin-top: 50px;
+    color: #ffffff;
+    background-color: #252525;
+    width: 170px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+}
+.frontpage-slider button:hover{
+    background-color: #f26522;
+    transition: color 0.3s ease-in-out;
+   cursor: pointer;
+}
+.frontpage-slider .shopping{
+    background-color:rgb(242, 222, 172, 0.80); ;
+    width: 45px;
+    height: 45px;
+    color:#212529;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: absolute;  
+}
+.frontpage-slider .shopping:hover{
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+.frontpage-slider .shopping-first-icon {
+    bottom: 200px;
+    left: 110px;
+    
+}
+.frontpage-slider .shopping-second-icon {
+    bottom: 200px;
+    right: 110px;
+}

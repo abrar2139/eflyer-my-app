@@ -1,0 +1,105 @@
+.main-footer{
+    background-color:#252525;
+    color: white;
+}
+.eflyer{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 45px;
+    cursor: pointer;  
+}
+.emailsub{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 680px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.emailsub p{
+    color: #f26522;
+}
+.emailsub input{
+    border:none;
+    font-size: 20px;
+    line-height: 2.5;
+    background-color: #252525;
+    color: white;
+}
+.emailsub input:focus{
+    outline: none;
+}
+.emailsub ::placeholder{
+    color: white;
+}
+hr{
+    width: 680px;
+    margin: auto;
+    height: 1px;
+    background-color: white;
+}
+.underline ul{
+    cursor: pointer;
+    line-height: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    margin: auto;
+    list-style: none;
+    margin-top: 20px;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+.end .end1{
+    margin-top: 30px;
+}
+.end .end2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.end p span:nth-child(2){
+    cursor: pointer;
+}
+.emailsub p:hover{
+    color: white;
+    transition: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+.underline ul li:hover{
+    color: #f26522;
+    transition: 0.5s;
+}
+
+.end p span:nth-child(2):hover{
+color:#f26522;
+transition: 0.5s;
+}
+@media (max-width:720px) {
+    .underline ul{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .underline ul li{
+        margin: 3px 0;
+    }
+    .emailsub{
+        width: 70%;
+        
+    }
+    hr{
+        width: 70%;
+
+    }
+    
+}
+@media (max-width:500px) {
+    .emailsub input{
+        width: inherit;
+    }
+}

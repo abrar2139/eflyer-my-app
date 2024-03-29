@@ -1,0 +1,118 @@
+.production .heading-fashion{
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 900;
+    font-size: 40px;  
+}
+.production{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    color: #30302e;
+    margin: auto;
+}
+.inner-production{
+    width: 90%;
+}
+.products{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;  
+}
+.products .product{
+    background-color: #ffffff;
+    box-shadow:0px 0 30px 10px #f0f0f0;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;  
+margin:10px ;
+}
+.products .product h1,.products .product h4{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.products .product h4 span{
+    color: #f26522;
+}
+.products .product h3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.products .product h3 .buy{
+    color: #f26522;
+}
+.product h3 span:first-child:hover{
+    color: #30302e;
+    cursor: pointer;
+    transition:color 0.3s ease-in-out;
+}
+.product h3 span:last-child:hover{
+    cursor: pointer;
+    color: #f26522;
+    transition:color 0.3s ease-in-out;
+}
+.products .product .inner-product{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.product .inner-product img{
+    margin: 50px 0;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+.icons-under-products{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.icons-under-products .under-icons{
+    background-color: #30302e;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px; 
+}
+.icons-under-products .under-icons:hover{
+    background-color: #f26522;
+    transition: all 0.3s ease-in-out;
+}
+.production .products{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+  .products.no-transition {
+    scroll-behavior: auto;
+  }
+  .products.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .products.dragging .product {
+    cursor: grab;
+    user-select: none;
+  }
+  .products .product {
+    scroll-snap-align: start;
+    cursor: pointer;
+  }
