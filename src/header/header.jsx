@@ -1,4 +1,3 @@
-
 import React, {useState} from 'react'
 import './header.css';
 import { IoMdSearch } from "react-icons/io";
@@ -29,8 +28,6 @@ export function Header() {
   }
   return (
     <div className="frontpage">
-
-      {/* <img src="https://themewagon.github.io/eflyer/images/banner-bg.png" alt="" /> */}
     <div className='header'>
 <div className='navbar' >
   <p>Best Sellers</p>
@@ -47,10 +44,10 @@ export function Header() {
        <div>
             <div className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <button className="closebtn" onClick={toggleSidebar}>&times;</button>
-                <a href="#">Home</a>
-                <a href="#">Fashion</a>
-                <a href="#">Electronic</a>
-                <a href="#">Jewellery</a>
+                <li href="#">Home</li>
+                <li href="#">Fashion</li>
+                <li href="#">Electronic</li>
+                <li href="#">Jewellery</li>
             </div>
 
         </div>
@@ -104,13 +101,6 @@ export function Header() {
          </div>
        </div>
        </div>
-      {/* <button class="btn btn-secondary dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">All Category 
-   </button>
-   <div>
-   <p>Action</p>
-   <p>Another action</p>
-   <p>Something else here</p>
-  </div> */}
   </div>
   <div className="frontpage-slider">
  <div className="shopping-first-icon shopping">
@@ -122,15 +112,10 @@ export function Header() {
             <button>BUY NOW</button>
            </div>
           <div className="shopping-second-icon shopping">
-
          <FaAngleRight />
           </div>
 </div>
-
 </div>
-       
-   
-  
   );
     }
   
